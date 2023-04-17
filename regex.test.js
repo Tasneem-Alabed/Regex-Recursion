@@ -1,4 +1,4 @@
-'use strict';
+ 'use strict';
 
 
 
@@ -7,9 +7,13 @@ characters (no numbers and symbols) and it should end with capital A else return
 
 function capitalA(s){
     // Add your logic.
-
+    let result = s.endsWith("A"); 
+if(s.toUpperCase() && s.toLowerCase() && result){
     
-    return;
+return true;
+}else{
+    
+    return false;}
 }
 
 
@@ -18,7 +22,13 @@ which end with io (example@example.io) */
 
 function ioEmail(email){
     // Add your logic.
-    return;
+    let result = email.endsWith("example@example.io");
+    if( result){
+    return true;}
+    else 
+    {
+        return false;
+    }
 }
 
 /* You have a text that contain image names with their extention you need to write a function to 
