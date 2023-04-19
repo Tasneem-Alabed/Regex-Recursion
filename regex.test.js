@@ -1,4 +1,4 @@
- 'use strict';
+'use strict';
 
 
 
@@ -7,7 +7,10 @@ characters (no numbers and symbols) and it should end with capital A else return
 
 function capitalA(s){
     // Add your logic.
-    let result = s.endsWith("A"); 
+    let text = s;
+    let pattern = /A$/;
+let result =text.match(pattern);
+
 if(s.toUpperCase() && s.toLowerCase() && result){
     
 return true;
@@ -22,7 +25,9 @@ which end with io (example@example.io) */
 
 function ioEmail(email){
     // Add your logic.
-    let result = email.endsWith("example@example.io");
+    let text = email;
+    let pattern = /example@example.io$/;
+    let result =text.match(pattern);
     if( result){
     return true;}
     else 
